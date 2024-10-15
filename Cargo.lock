@@ -33,44 +33,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "8c3c1a368f70d6cf7302d78f8f7093da241fb8e8807c05cc9e51a125895a6d5b"
 
 [[package]]
-name = "belt-block"
-version = "0.1.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d9aa1eef3994e2ccd304a78fe3fea4a73e5792007f85f09b79bb82143ca5f82b"
-
-[[package]]
-name = "belt-hash"
-version = "0.2.0-pre.4"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "ee5982dbf7d2f719b4237cd796ee600e9dcbef1eef460ece65380f9192a54ab5"
-dependencies = [
- "belt-block",
- "digest",
-]
-
-[[package]]
-name = "bign256"
-version = "0.14.0-pre"
-dependencies = [
- "belt-hash",
- "criterion",
- "der",
- "digest",
- "elliptic-curve",
- "hex",
- "hex-literal",
- "hkdf",
- "hmac",
- "pkcs8",
- "primeorder",
- "proptest",
- "rand_core",
- "rfc6979",
- "sec1",
- "signature",
-]
-
-[[package]]
 name = "bit-set"
 version = "0.5.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -122,26 +84,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "17092d478f4fadfb35a7e082f62e49f0907fdf048801d9d706277e34f9df8a78"
 dependencies = [
  "crypto-common",
-]
-
-[[package]]
-name = "bp256"
-version = "0.7.0-pre"
-dependencies = [
- "ecdsa",
- "elliptic-curve",
- "primeorder",
- "sha2",
-]
-
-[[package]]
-name = "bp384"
-version = "0.7.0-pre"
-dependencies = [
- "ecdsa",
- "elliptic-curve",
- "primeorder",
- "sha2",
 ]
 
 [[package]]
@@ -745,82 +687,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "0ab1bc2a289d34bd04a330323ac98a1b4bc82c9d9fcb1e66b63caa84da26b575"
 
 [[package]]
-name = "p192"
-version = "0.14.0-pre"
-dependencies = [
- "ecdsa",
- "elliptic-curve",
- "hex-literal",
- "primeorder",
- "sec1",
- "serdect",
-]
-
-[[package]]
-name = "p224"
-version = "0.14.0-pre"
-dependencies = [
- "blobby",
- "ecdsa",
- "elliptic-curve",
- "hex-literal",
- "primeorder",
- "rand_core",
- "serdect",
- "sha2",
-]
-
-[[package]]
-name = "p256"
-version = "0.14.0-pre.2"
-dependencies = [
- "blobby",
- "criterion",
- "ecdsa",
- "elliptic-curve",
- "hex-literal",
- "primeorder",
- "proptest",
- "rand_core",
- "serdect",
- "sha2",
-]
-
-[[package]]
-name = "p384"
-version = "0.14.0-pre.2"
-dependencies = [
- "blobby",
- "criterion",
- "ecdsa",
- "elliptic-curve",
- "hex-literal",
- "primeorder",
- "proptest",
- "rand_core",
- "serdect",
- "sha2",
-]
-
-[[package]]
-name = "p521"
-version = "0.14.0-pre.2"
-dependencies = [
- "base16ct",
- "blobby",
- "criterion",
- "ecdsa",
- "elliptic-curve",
- "hex-literal",
- "primefield",
- "primeorder",
- "proptest",
- "rand_core",
- "serdect",
- "sha2",
-]
-
-[[package]]
 name = "pem-rfc7468"
 version = "1.0.0-rc.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -878,18 +744,6 @@ name = "ppv-lite86"
 version = "0.2.17"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "5b40af805b3121feab8a3c29f04d8ad262fa8e0561883e7653e024ae4479e6de"
-
-[[package]]
-name = "primefield"
-version = "0.14.0-pre.0"
-
-[[package]]
-name = "primeorder"
-version = "0.14.0-pre.2"
-dependencies = [
- "elliptic-curve",
- "serdect",
-]
 
 [[package]]
 name = "proc-macro2"
@@ -1189,30 +1043,6 @@ checksum = "054d71959c7051b9042c26af337f05cc930575ed2604d7d3ced3158383e59734"
 dependencies = [
  "digest",
  "rand_core",
-]
-
-[[package]]
-name = "sm2"
-version = "0.14.0-pre"
-dependencies = [
- "elliptic-curve",
- "hex-literal",
- "primeorder",
- "proptest",
- "rand_core",
- "rfc6979",
- "serdect",
- "signature",
- "sm3",
-]
-
-[[package]]
-name = "sm3"
-version = "0.5.0-pre.4"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "07f9b2bb2253fa784d673b18790bafaa35f5757b27e6616b01f09417dd0003f9"
-dependencies = [
- "digest",
 ]
 
 [[package]]
