@@ -1,5 +1,5 @@
 [package]
-name = "k256"
+name = "earthbucks_k256"
 version = "0.14.0-pre.2"
 description = """
 secp256k1 elliptic curve library written in pure Rust with support for ECDSA

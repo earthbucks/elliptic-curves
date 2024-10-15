@@ -309,6 +309,28 @@ dependencies = [
 ]
 
 [[package]]
+name = "earthbucks_k256"
+version = "0.14.0-pre.2"
+dependencies = [
+ "blobby",
+ "cfg-if",
+ "criterion",
+ "ecdsa",
+ "elliptic-curve",
+ "hex",
+ "hex-literal",
+ "num-bigint",
+ "num-traits",
+ "once_cell",
+ "proptest",
+ "rand_core",
+ "serdect",
+ "sha2",
+ "sha3",
+ "signature",
+]
+
+[[package]]
 name = "ecdsa"
 version = "0.17.0-pre.9"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -544,28 +566,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "445dde2150c55e483f3d8416706b97ec8e8237c307e5b7b4b8dd15e6af2a0730"
 dependencies = [
  "wasm-bindgen",
-]
-
-[[package]]
-name = "k256"
-version = "0.14.0-pre.2"
-dependencies = [
- "blobby",
- "cfg-if",
- "criterion",
- "ecdsa",
- "elliptic-curve",
- "hex",
- "hex-literal",
- "num-bigint",
- "num-traits",
- "once_cell",
- "proptest",
- "rand_core",
- "serdect",
- "sha2",
- "sha3",
- "signature",
 ]
 
 [[package]]

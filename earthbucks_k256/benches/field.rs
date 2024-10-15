@@ -3,7 +3,7 @@
 use criterion::{
     black_box, criterion_group, criterion_main, measurement::Measurement, BenchmarkGroup, Criterion,
 };
-use k256::FieldElement;
+use earthbucks_k256::FieldElement;
 
 fn test_field_element_x() -> FieldElement {
     FieldElement::from_bytes(
