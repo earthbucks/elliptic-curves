@@ -309,13 +309,28 @@ dependencies = [
 ]
 
 [[package]]
+name = "earthbucks_ecdsa"
+version = "0.8.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "1c85c2589a3074ece0ee8d2518b350fa0fab871517317201749a926e7fe36974"
+dependencies = [
+ "der",
+ "digest",
+ "earthbucks_rfc6979",
+ "elliptic-curve",
+ "serdect",
+ "signature",
+ "spki",
+]
+
+[[package]]
 name = "earthbucks_k256"
 version = "0.8.0"
 dependencies = [
  "blobby",
  "cfg-if",
  "criterion",
- "ecdsa",
+ "earthbucks_ecdsa",
  "elliptic-curve",
  "hex",
  "hex-literal",
@@ -331,18 +346,13 @@ dependencies = [
 ]
 
 [[package]]
-name = "ecdsa"
-version = "0.17.0-pre.9"
+name = "earthbucks_rfc6979"
+version = "0.5.0-pre.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "7e62f2041a28c40b8884b79fbd19bc7457d76c6397767831e9ff4029fc0473a9"
+checksum = "d00eb6160875f1d211cab774d4ab5ce512f9aafe27e7bd36e38e32b135a1d91c"
 dependencies = [
- "der",
- "digest",
- "elliptic-curve",
- "rfc6979",
- "serdect",
- "signature",
- "spki",
+ "hmac",
+ "subtle",
 ]
 
 [[package]]
@@ -885,16 +895,6 @@ name = "regex-syntax"
 version = "0.8.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "c08c74e62047bb2de4ff487b251e4a92e24f48745648451635cec7d591162d9f"
-
-[[package]]
-name = "rfc6979"
-version = "0.5.0-pre.4"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "871ee76a3eee98b0f805e5d1caf26929f4565073c580c053a55f886fc15dea49"
-dependencies = [
- "hmac",
- "subtle",
-]
 
 [[package]]
 name = "rustix"
