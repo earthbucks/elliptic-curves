@@ -24,7 +24,7 @@
 //! ```
 //! # #[cfg(all(feature = "ecdsa", feature = "sha256"))]
 //! # {
-//! use earthbucks_k256::{
+//! use k256::{
 //!     ecdsa::{SigningKey, Signature, signature::Signer},
 //!     SecretKey,
 //! };
@@ -40,7 +40,7 @@
 //! let signature: Signature = signing_key.sign(message);
 //!
 //! // Verification
-//! use earthbucks_k256::{EncodedPoint, ecdsa::{VerifyingKey, signature::Verifier}};
+//! use k256::{EncodedPoint, ecdsa::{VerifyingKey, signature::Verifier}};
 //!
 //! let verifying_key = VerifyingKey::from(&signing_key); // Serialize with `::to_encoded_point()`
 //! assert!(verifying_key.verify(message, &signature).is_ok());
@@ -64,7 +64,7 @@
 #![cfg_attr(not(feature = "std"), doc = "```ignore")]
 //! # fn main() -> Result<(), Box<dyn std::error::Error>> {
 //! use hex_literal::hex;
-//! use earthbucks_k256::ecdsa::{RecoveryId, Signature, VerifyingKey};
+//! use k256::ecdsa::{RecoveryId, Signature, VerifyingKey};
 //! use sha3::{Keccak256, Digest};
 //! use elliptic_curve::sec1::ToEncodedPoint;
 //!

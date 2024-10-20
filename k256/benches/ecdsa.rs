@@ -1,7 +1,7 @@
 //! secp256k1 scalar arithmetic benchmarks
 
 use criterion::{black_box, criterion_group, criterion_main, Criterion};
-use earthbucks_k256::{
+use k256::{
     ecdsa::{
         signature::hazmat::{PrehashSigner, PrehashVerifier},
         Signature, SigningKey,

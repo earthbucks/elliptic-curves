@@ -1,7 +1,7 @@
 [workspace]
 resolver = "2"
 members = [
-    "earthbucks_k256",
+    "k256",
 ]
 
 [profile.dev]

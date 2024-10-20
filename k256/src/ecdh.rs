@@ -9,7 +9,7 @@
 //! exchange, nicknamed "Alice" and "Bob".
 //!
 //! ```
-//! use earthbucks_k256::{EncodedPoint, PublicKey, ecdh::EphemeralSecret};
+//! use k256::{EncodedPoint, PublicKey, ecdh::EphemeralSecret};
 //! use rand_core::OsRng; // requires 'getrandom' feature
 //!
 //! // Alice

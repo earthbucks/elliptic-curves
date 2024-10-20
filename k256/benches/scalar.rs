@@ -4,7 +4,7 @@ use criterion::{
     black_box, criterion_group, criterion_main, measurement::Measurement, BenchmarkGroup, Criterion,
 };
 use hex_literal::hex;
-use earthbucks_k256::{
+use k256::{
     elliptic_curve::{group::ff::PrimeField, ops::LinearCombination, ops::MulByGenerator},
     ProjectivePoint, Scalar,
 };
